@@ -4,14 +4,58 @@
         <title>Helpdesk</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <style rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"></style>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
     </head>
     <body>
         
             <main class="container-fluid">
-                <div class="h6 text-danger">Sistema Helpdesk</div>
+                <div class="h1 text-center text-primary">Sistema Helpdesk</div>
                 <!-- FORMULÁRIO DE PEDIDO -->
-                
+                    <form action="post">
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Nome">
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Endereço">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="form-row">
+                            <textarea class="textarea form-control" placeholder="Qual o motivo do contato?" ></textarea>
+                        </div>
+                        <hr class="hr">
+                        <div class="form-row">
+                            <div class="col-sm">
+                                    <div class="form-group">
+                                        <div>
+                                            <label for="data">Data:</label>
+                                            <input class="form-control" id="data" type="datetime"/>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-sm">
+                                    <div class="form-group">                                        
+                                            <label class="" for="prioridade">Prioridade</label>
+                                            <select class="form-control" name="prioridade" id="prioridade">
+                                                <option value=""></option>
+                                                <option class="text-info" value="">Baixa</option>
+                                                <option class="text-warning" value="">Média</option>
+                                                <option class="text-danger" value="">Alta</option>
+                                            </select>                                        
+                                    </div>                                    
+                            </div>
+                            
+                        </div>
+                        <div class="form-row justify-content-end">
+                            <button class="btn btn-primary btn-sm btn-block">
+                                Enviar requisição
+                            </button>
+                        </div>
+                    </form>
                 <!-- FIM DO FORMULÁRIO -->
             </main>
         
